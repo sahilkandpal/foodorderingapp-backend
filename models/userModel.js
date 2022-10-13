@@ -20,6 +20,10 @@ const userSchema = new Schema({
     email:{
         type: String,
         unique: true,
+    },
+    address: {
+        type: Schema.Types.ObjectId,
+        required: true,
     }
 })
 
